@@ -1,0 +1,80 @@
+import React from 'react';
+import './Menu.scss';
+import Navbar from 'react-bootstrap/Navbar';
+import Image from 'react-bootstrap/Image';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+
+class Menu extends React.Component{
+
+  render() {
+
+    let fechaActual = new Date();
+    let weekdays = new Array(7);
+    weekdays[0] = "Domingo";
+    weekdays[1] = "Lunes";
+    weekdays[2] = "Martes";
+    weekdays[3] = "Miércoles";
+    weekdays[4] = "Jueves";
+    weekdays[5] = "Viernes";
+    weekdays[6] = "Sábado";
+    let diaSemana = weekdays[fechaActual.getDay()];
+
+    let monthNames = new Array(12);
+    monthNames[0] = "Enero";
+    monthNames[1] = "Febrero";
+    monthNames[2] = "Marzo";
+    monthNames[3] = "Abril";
+    monthNames[4] = "Mayo";
+    monthNames[5] = "Junio";
+    monthNames[6] = "Julio";
+    monthNames[7] = "Agosto";
+    monthNames[8] = "Septiembre";
+    monthNames[9] = "Octubre";
+    monthNames[10] = "Noviembre";
+    monthNames[11] = "Diciembre";
+    let nombreMes = monthNames[fechaActual.getMonth()];
+
+    let checksForm = this.props.knowLedgeTypes.map((knowLedgeType) => 
+        <Form.Check 
+          className="no-selectable"
+          key={knowLedgeType.id}
+          custom
+          inline
+          label={knowLedgeType.name}
+          type="checkbox"
+          id={`custom-inline-checkbox-${knowLedgeType.id}`}
+        />
+    );
+
+    return (
+      <div className="Menu w-100">
+        <Navbar bg="dark" variant="dark" className="justify-content-between">
+          <Navbar.Text >
+            { `${diaSemana}, ${fechaActual.getDate()} de ${nombreMes} de ${fechaActual.getFullYear()}`   }
+          </Navbar.Text>
+          <Navbar.Brand href="/">
+            <Row>CÉSAR SAN JOSÉ VIEDMA</Row>
+            <Row>
+              <Navbar.Text>
+                React, React Bootstrap, React Navigation, Sass, JavaScript y HTML. 
+              </Navbar.Text>
+            </Row>            
+          </Navbar.Brand>
+          <Navbar.Brand href="img/CesarSanJoseViedma.jpg" className="p-0">
+              <Image src="img/CesarSanJoseViedma.jpg" roundedCircle className="image-cv"/>
+          </Navbar.Brand>      
+        </Navbar>
+        <Navbar className="bg-light justify-content-between">
+          <Form inline>
+            {checksForm}
+          </Form>
+          <span className="mr-2"><i className="cursor-pointer fas fa-download"></i> </span>
+        </Navbar>
+      </div>
+    );
+
+  }
+}
+
+export default Menu;
