@@ -16,8 +16,8 @@ class KnowLedgeType extends React.Component{
 
     return(
 
-      <Col xl={3} lg={6} md={6} sm={6} xs={12}>
-        <Card style={{ width: '18rem' }} className="KnowLedgeType text-center">
+      <Col xl={3} lg={4} md={6} sm={6} xs={12} className="w-100 mt-3 mb-3">
+        <Card className="KnowLedgeType text-center">
           <Card.Body>
             <Card.Title>{this.props.knowLedgeType.name}</Card.Title>
             <Card.Text>

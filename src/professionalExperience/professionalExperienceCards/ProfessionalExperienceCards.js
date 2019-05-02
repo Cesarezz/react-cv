@@ -33,7 +33,7 @@ class ProfessionalExperienceCards extends React.Component{
 
     return(
 
-      <Col xl={4} lg={6} md={6} sm={6} xs={12}>
+      <Col xl={4} lg={6} md={6} sm={6} xs={12} className="mt-2 mb-2">
         <Card style={{ width: '100%' }} className="ProfessionalExperienceCards p-2">
           <Card.Img variant="top" 
                     src={'../../' + this.props.corporation.logoEmpresa}

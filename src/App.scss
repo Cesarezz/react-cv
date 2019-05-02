@@ -2,6 +2,7 @@
 
     .icono-font{
         font-size: 2.5rem;
+        color: #6c757d !important;
     }
 
     .cursor-pointer{
@@ -29,7 +30,7 @@
 
     .subtitle-section{
 
-        color: #495057;
+        color: #6c757d;
         
     }
 
@@ -41,6 +42,30 @@
 
     .card-group [class*='col-'] {
         float:none;
+    }
+
+    .border-section{
+
+        & > div{
+
+            border: 1px solid rgba(0,0,0,.125);
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+            border-radius: 0;
+
+        }
+        
+    }
+
+    .border-section-bottom{
+
+        border: 1px solid rgba(0,0,0,.125);
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-radius: 0;
+        
     }
 
 }

@@ -116,11 +116,17 @@ class Menu extends React.Component{
               <Image src="img/CesarSanJoseViedma.jpg" roundedCircle className="image-cv"/>
           </Navbar.Brand>      
         </Navbar>
-        <Navbar className="bg-light justify-content-between">
+        <Navbar className="justify-content-between">
+          <span>
+              Ver "Tipos de Experiencias" en detalle
+              <span className="ml-3">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </span>
+          </span>
           <Form inline>
             {checksFormList}
+            <span className="mr-2"><i className="cursor-pointer fas fa-download"></i> </span>
           </Form>
-          <span className="mr-2"><i className="cursor-pointer fas fa-download"></i> </span>
         </Navbar>
       </div>
     );
