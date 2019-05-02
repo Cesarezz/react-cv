@@ -7,6 +7,56 @@ import Row from 'react-bootstrap/Row';
 
 class Menu extends React.Component{
 
+  constructor(props){
+
+    super(props);
+
+    this.onInChecksFormsChange = this.handleInChecksFormsChange.bind(this);
+
+  }
+
+  handleInChecksFormsChange(e){
+
+    console.log("e.id", e.target.id);
+
+    console.log("e.target.name", e.target.checked);
+
+    const checksForm = this.props.checksForm.slice();
+
+    switch(e.target.id){
+
+      case "custom-inline-checkbox-1": 
+
+        checksForm[0] = e.target.checked;
+
+        break;
+
+      case "custom-inline-checkbox-2": 
+
+        checksForm[1] = e.target.checked;
+
+        break;
+
+      case "custom-inline-checkbox-3": 
+
+        checksForm[2] = e.target.checked;
+
+        break;
+
+      case "custom-inline-checkbox-4":
+
+        checksForm[3] = e.target.checked;
+
+        break;
+
+      default: 
+
+    }
+
+    this.props.onInChecksFormsChange(checksForm);
+
+  }
+
   render() {
 
     let fechaActual = new Date();
@@ -35,12 +85,13 @@ class Menu extends React.Component{
     monthNames[11] = "Diciembre";
     let nombreMes = monthNames[fechaActual.getMonth()];
 
-    let checksForm = this.props.knowLedgeTypes.map((knowLedgeType) => 
+    let checksFormList = this.props.knowLedgeTypes.map((knowLedgeType) => 
         <Form.Check 
           className="no-selectable"
           key={knowLedgeType.id}
           custom
           inline
+          onChange={this.onInChecksFormsChange}
           label={knowLedgeType.name}
           type="checkbox"
           id={`custom-inline-checkbox-${knowLedgeType.id}`}
@@ -50,13 +101,13 @@ class Menu extends React.Component{
     return (
       <div className="Menu w-100">
         <Navbar bg="dark" variant="dark" className="justify-content-between">
-          <Navbar.Text >
+          <Navbar.Text className="d-none d-lg-block">
             { `${diaSemana}, ${fechaActual.getDate()} de ${nombreMes} de ${fechaActual.getFullYear()}`   }
           </Navbar.Text>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" className="pl-3">
             <Row>CÉSAR SAN JOSÉ VIEDMA</Row>
             <Row>
-              <Navbar.Text>
+              <Navbar.Text className="d-none d-md-block"> 
                 React, React Bootstrap, React Navigation, Sass, JavaScript y HTML. 
               </Navbar.Text>
             </Row>            
@@ -67,7 +118,7 @@ class Menu extends React.Component{
         </Navbar>
         <Navbar className="bg-light justify-content-between">
           <Form inline>
-            {checksForm}
+            {checksFormList}
           </Form>
           <span className="mr-2"><i className="cursor-pointer fas fa-download"></i> </span>
         </Navbar>

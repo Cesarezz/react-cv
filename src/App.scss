@@ -16,4 +16,31 @@
         -o-user-select:none;
     }
 
+    .title-section{
+
+        font-family: "Roboto_condensed";
+        font-weight: bold;
+        color: #000;
+        font-size: 1.25rem;
+        line-height: 1.1875rem;
+        letter-spacing: 0rem;
+
+    }
+
+    .subtitle-section{
+
+        color: #495057;
+        
+    }
+
+    .hashtag-style{
+
+        color: #1DA1F2;
+
+    }
+
+    .card-group [class*='col-'] {
+        float:none;
+    }
+
 }

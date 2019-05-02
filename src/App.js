@@ -2,64 +2,73 @@ import React from 'react';
 import './App.scss';
 import Menu from './menu/Menu';
 import KnowLedgeType from './knowLedgeTypes/KnowLedgeTypes';
+import ProfessionalExperience from './professionalExperience/ProfessionalExperience';
+import OutsideExperience from './outsideExperience/OutsideExperience';
+import Languages from './languages/Languages';
+import Others from './others/Others'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-const knowLedgeTypes = [
-  { 
-    id: 1, 
-    name: "Experiencia Profesional", 
-    description: "Proyectos en empresas",
-    url: "professional-experience", 
-    icons: ['fa-business-time']
-  },
-  { 
-    id: 2, 
-    name: "Conocimientos Extralaborales", 
-    description: "Estudios universitarios, MOOCs y proyectos personales",
-    url: "outside-word-environment", 
-    icons: ['fa-graduation-cap', 'fa-coffee', 'fa-home', 'fa-book-open']
-  },
-  { 
-    id: 3, 
-    name: "Idiomas", 
-    description: "Cursos y nivel",
-    url: "languages", 
-    icons: ["fa-language", "fa-globe-europe"]
-  },
-  { 
-    id: 4, 
-    name: "Otros", 
-    description: "Cursos Extraprofesionales",
-    url: "others", 
-    icons: ["fa-user-friends", 'fa-book-open'/*, 'fa-seedling', 'fa-frog', 'mortar-pestle'*/]
+class App extends React.Component{
+
+  constructor(props){
+
+    super(props);
+
+    this.state = {
+      checksForm: [ false, false, false, false]
+    };
+
+    this.handleInChecksFormsChange = this.handleInChecksFormsChange.bind(this);
+
+  } 
+
+  handleInChecksFormsChange(checksForm) {
+    this.setState({
+      checksForm: checksForm
+    });
   }
-];
 
-function App() {
+  render() {
 
-  const listCardsknowLedgeTypes = knowLedgeTypes.map((knowLedgeType) =>
-   
-      <KnowLedgeType key={knowLedgeType.id} knowLedgeType={knowLedgeType}></KnowLedgeType>
+    const checksForm = this.state.checksForm.slice();
 
-  );
+    const listCardsknowLedgeTypes = this.props.knowLedgeTypes.map((knowLedgeType, index) =>
+      { 
+        return ((!checksForm[index]) ? 
+        <KnowLedgeType key={knowLedgeType.id} knowLedgeType={knowLedgeType}></KnowLedgeType>
+        :((index === 0) ?  <ProfessionalExperience  key={knowLedgeType.id} 
+                                                    knowLedgeType={knowLedgeType} 
+                                                    professionalExperience={this.props.professionalExperience}></ProfessionalExperience>
+        :((index === 1) ?  <OutsideExperience></OutsideExperience>
+        :((index === 2) ?  <Languages></Languages>
+        :<Others></Others>))));
+      }   
+    );
 
-  
-  return (
+    /* AQUI HACER IFs que según "checksForm", mostrará u ocultará clases de React */
+    /* AQUI HACER IFs que según "checksForm", mostrará u ocultará clases de React */
+    /* AQUI HACER IFs que según "checksForm", mostrará u ocultará clases de React */
+    /* AQUI HACER IFs que según "checksForm", mostrará u ocultará clases de React */
+
+    return (
+    
     <div className="App">
-
       <Container fluid="true">
         <Row>
-          <Menu knowLedgeTypes={knowLedgeTypes}/>
+          <Menu knowLedgeTypes={this.props.knowLedgeTypes} 
+                checksForm={this.state.checksForm}
+                onInChecksFormsChange={this.handleInChecksFormsChange}/>
         </Row>
         <Row className="mt-4 mb-4"> 
           {listCardsknowLedgeTypes}
         </Row>
       </Container>
-      
-
     </div>
-  );
+    
+    );
+
+  }
 }
 
 export default App;
