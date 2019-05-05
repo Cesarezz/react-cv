@@ -69,8 +69,8 @@ class ProfessionalExperience extends React.Component{
 
         <Navbar className="justify-content-between">
           <span>
-              Ver "Empresas" en detalle 
-              <span className="ml-3">
+              <span className="text-white">Ver "Empresas" en detalle </span>
+              <span className="ml-3 text-white">
                 <i className="fas fa-long-arrow-alt-right"></i> 
               </span>
           </span>

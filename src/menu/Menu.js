@@ -118,7 +118,7 @@ class Menu extends React.Component{
         </Navbar>
         <Navbar bg="dark" variant="dark" className="justify-content-between">
           <span>
-              Ver "Tipos de Experiencias" en detalle
+              <span className="text-white">Ver "Tipos de Experiencias" en detalle</span>
               <span className="ml-3">
                 <i className="fas fa-long-arrow-alt-right"></i>
               </span>
