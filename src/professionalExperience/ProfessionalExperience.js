@@ -47,7 +47,7 @@ class ProfessionalExperience extends React.Component{
 
     return(
 
-      <Col xl={12} lg={12} md={12} sm={12} xs={12} className="border-section-bottom">
+      <Col xl={12} lg={12} md={12} sm={12} xs={12} className="border-section-bottom mt-3 mb-3">
 
         <Row className="border-section">
 
@@ -71,7 +71,7 @@ class ProfessionalExperience extends React.Component{
           <span>
               Ver "Empresas" en detalle 
               <span className="ml-3">
-                <i class="fas fa-long-arrow-alt-right"></i> 
+                <i className="fas fa-long-arrow-alt-right"></i> 
               </span>
           </span>
           <Form inline>

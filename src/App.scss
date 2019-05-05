@@ -1,5 +1,18 @@
 .App{
 
+    .height-no-nav{
+        height: calc(100% - 142px);
+    }
+
+    & .bg{
+        background: url("/../img/pc-nature.jpg") no-repeat center center fixed;
+        height: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
     .icono-font{
         font-size: 2.5rem;
         color: #6c757d !important;
@@ -36,7 +49,9 @@
 
     .hashtag-style{
 
-        color: #1DA1F2;
+        color: #002e70;
+        background: transparent;
+        font-weight: bold;
 
     }
 

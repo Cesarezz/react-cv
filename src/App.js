@@ -40,11 +40,17 @@ class App extends React.Component{
         :((index === 0) ?  <ProfessionalExperience  key={knowLedgeType.id} 
                                                     knowLedgeType={knowLedgeType} 
                                                     professionalExperience={this.props.professionalExperience}></ProfessionalExperience>
-        :((index === 1) ?  <OutsideExperience></OutsideExperience>
+        :((index === 1) ?  <OutsideExperience   key={knowLedgeType.id} 
+                                                knowLedgeType={knowLedgeType} 
+                                                outsideExperience={this.props.outsideExperience}></OutsideExperience>
         :((index === 2) ?  <Languages></Languages>
         :<Others></Others>))));
       }   
     );
+
+    const filtersFalse = checksForm.every( (elem) => { 
+      return !elem; 
+    });
 
     /* AQUI HACER IFs que según "checksForm", mostrará u ocultará clases de React */
     /* AQUI HACER IFs que según "checksForm", mostrará u ocultará clases de React */
@@ -53,14 +59,14 @@ class App extends React.Component{
 
     return (
     
-    <div className="App">
-      <Container fluid="true">
+    <div className="App bg">
+      <Container fluid="true" className={(filtersFalse ? "height-no-nav": "h-100")}>
         <Row>
           <Menu knowLedgeTypes={this.props.knowLedgeTypes} 
                 checksForm={this.state.checksForm}
                 onInChecksFormsChange={this.handleInChecksFormsChange}/>
         </Row>
-        <Row className="mt-4 mb-4"> 
+        <Row className="bg">
           {listCardsknowLedgeTypes}
         </Row>
       </Container>
