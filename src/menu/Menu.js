@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
+import { Link } from 'react-router-dom';
 
 class Menu extends React.Component{
 
@@ -104,14 +105,15 @@ class Menu extends React.Component{
           <Navbar.Text className="d-none d-lg-block">
             { `${diaSemana}, ${fechaActual.getDate()} de ${nombreMes} de ${fechaActual.getFullYear()}`   }
           </Navbar.Text>
-          <Navbar.Brand href="/" className="pl-3">
+          <Link to='/' className="pl-3 link-space">
+          
             <Row>CÉSAR SAN JOSÉ VIEDMA</Row>
             <Row>
               <Navbar.Text className="d-none d-md-block"> 
                 React, React Bootstrap, React Navigation, Sass, JavaScript y HTML. 
               </Navbar.Text>
             </Row>            
-          </Navbar.Brand>
+          </Link>
           <Navbar.Brand href="img/CesarSanJoseViedma.jpg" className="p-0">
               <Image src="img/CesarSanJoseViedma.jpg" roundedCircle className="image-cv"/>
           </Navbar.Brand>      
