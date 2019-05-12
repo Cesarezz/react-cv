@@ -25,7 +25,7 @@ class KnowLedgeType extends React.Component{
               {this.props.knowLedgeType.description}
             </Card.Text>
             <Button variant="primary" className="button-enlace"> 
-              <Link to='/professional-experience'>
+              <Link to={this.props.knowLedgeType.url}>
                 Ir a {this.props.knowLedgeType.name}
               </Link>            
             </Button>

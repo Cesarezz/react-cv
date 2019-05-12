@@ -87,7 +87,7 @@ class ProfessionalExperience extends React.Component{
 
     }
 
-    let containerComponent = 
+    let containerComponentProfessionalExperience = 
     <Col xl={12} lg={12} md={12} sm={12} xs={12} className="border-section-bottom mt-3 mb-3">
       <Row className="border-section">
           <Col xl={5} lg={6} md={6} sm={6} xs={8}>
@@ -126,14 +126,14 @@ class ProfessionalExperience extends React.Component{
             <Menu />
           </Row>
           <Row className="bg">
-            {containerComponent}
+            {containerComponentProfessionalExperience}
           </Row>
         </Container>;
 
     }
 
     return(
-      (this.props.indice === undefined) ? headerStatic: containerComponent        
+      (this.props.indice === undefined) ? headerStatic: containerComponentProfessionalExperience        
     );
 
   }
