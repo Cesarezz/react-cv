@@ -4,7 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import { Link } from 'react-router-dom';
 
 class Menu extends React.Component{
 
@@ -86,18 +85,28 @@ class Menu extends React.Component{
     monthNames[11] = "Diciembre";
     let nombreMes = monthNames[fechaActual.getMonth()];
 
-    let checksFormList = this.props.knowLedgeTypes.map((knowLedgeType) => 
-        <Form.Check 
-          className="no-selectable"
-          key={knowLedgeType.id}
-          custom
-          inline
-          onChange={this.onInChecksFormsChange}
-          label={knowLedgeType.name}
-          type="checkbox"
-          id={`custom-inline-checkbox-${knowLedgeType.id}`}
-        />
-    );
+    let checksFormList;
+
+    if(this.props.knowLedgeTypes === undefined){
+
+
+
+    } else {
+
+      checksFormList = this.props.knowLedgeTypes.map((knowLedgeType) => 
+      <Form.Check 
+        className="no-selectable"
+        key={knowLedgeType.id}
+        custom
+        inline
+        onChange={this.onInChecksFormsChange}
+        label={knowLedgeType.name}
+        type="checkbox"
+        id={`custom-inline-checkbox-${knowLedgeType.id}`}
+      />
+      );
+
+    }
 
     return (
       <div className="Menu w-100">
@@ -105,31 +114,27 @@ class Menu extends React.Component{
           <Navbar.Text className="d-none d-lg-block">
             { `${diaSemana}, ${fechaActual.getDate()} de ${nombreMes} de ${fechaActual.getFullYear()}`   }
           </Navbar.Text>
-          <Link to='/' className="pl-3 link-space">
-          
+          <Navbar.Brand href="/" className="pl-3">
             <Row>CÉSAR SAN JOSÉ VIEDMA</Row>
             <Row>
               <Navbar.Text className="d-none d-md-block"> 
                 React, React Bootstrap, React Navigation, Sass, JavaScript y HTML. 
               </Navbar.Text>
             </Row>            
-          </Link>
+          </Navbar.Brand>
           <Navbar.Brand href="img/CesarSanJoseViedma.jpg" className="p-0">
               <Image src="img/CesarSanJoseViedma.jpg" roundedCircle className="image-cv"/>
           </Navbar.Brand>      
         </Navbar>
-        <Navbar bg="dark" variant="dark" className="justify-content-between">
-          <span>
-              <span className="text-white">Ver "Tipos de Experiencias" en detalle</span>
-              <span className="ml-3">
-                <i className="fas fa-long-arrow-alt-right"></i>
-              </span>
-          </span>
-          <Form inline>
-            {checksFormList}
-            <span className="mr-2"><i className="cursor-pointer fas fa-download"></i> </span>
-          </Form>
-        </Navbar>
+        { (this.props.knowLedgeTypes !== undefined) ? 
+          <Navbar bg="dark" variant="dark" className="justify-content-between pt-0 pb-1">
+            <span></span>
+            <Form inline>
+              {checksFormList}
+              <span className="mr-2"><i className="cursor-pointer fas fa-download"></i> </span>
+            </Form>
+          </Navbar> : ""}
+        
       </div>
     );
 

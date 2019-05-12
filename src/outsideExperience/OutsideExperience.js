@@ -8,20 +8,31 @@ class OutsideExperience extends React.Component{
 
   render(){
 
-    const listIcons = this.props.knowLedgeType.icons.map( (icon, index) => 
-    
-      <span className="mr-2" key={index}> <i className={`icono-font fas ${icon}`}></i> </span>  
-        
-    );
-
+    let listIcons;
 
     let outsideExperienceCards = [];
 
-    this.props.outsideExperience.forEach(outsideExperience => {
-        
-      outsideExperienceCards.push(<TecnologiesCards outsideExperience={outsideExperience}></TecnologiesCards>);
-        
-    });
+    //Si se cumple lo siguiente es que estamos accediendo por enrutamiento
+    if(this.props.indice === undefined){
+
+      
+
+    } //Accedemos al componente desde el home.
+    else {
+
+      listIcons = this.props.knowLedgeType.icons.map( (icon, index) => 
+      
+        <span className="mr-2" key={index}> <i className={`icono-font fas ${icon}`}></i> </span>  
+          
+      );
+
+      this.props.outsideExperience.forEach(outsideExperience => {
+          
+        outsideExperienceCards.push(<TecnologiesCards outsideExperience={outsideExperience}></TecnologiesCards>);
+          
+      });
+
+    }
 
     return(
 

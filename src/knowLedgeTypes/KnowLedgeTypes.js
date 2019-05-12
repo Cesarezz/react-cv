@@ -3,6 +3,7 @@ import './KnowLedgeTypes.scss';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
 class KnowLedgeType extends React.Component{
 
@@ -23,7 +24,11 @@ class KnowLedgeType extends React.Component{
             <Card.Text>
               {this.props.knowLedgeType.description}
             </Card.Text>
-            <Button variant="primary">Ir a {this.props.knowLedgeType.name}</Button>
+            <Button variant="primary" className="button-enlace"> 
+              <Link to='/professional-experience'>
+                Ir a {this.props.knowLedgeType.name}
+              </Link>            
+            </Button>
           </Card.Body>
           <Card.Footer className="text-muted text-center">
               {listIcons}
