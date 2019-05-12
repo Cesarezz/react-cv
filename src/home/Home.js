@@ -35,6 +35,8 @@ class Home extends React.Component{
   }
 
   render() {
+
+    let minHeightPx = `${window.innerHeight}px`;
     
     const checksForm = this.state.checksForm.slice();
 
@@ -61,7 +63,8 @@ class Home extends React.Component{
 
     return(
 
-      <div className="App bg">
+      <div className="App bg"
+           style={{minHeight: minHeightPx }}>
         <Container fluid="true" className={(filtersFalse ? "height-no-nav": "h-100")}>
           <Row>
             <Menu knowLedgeTypes={ApiKnowLedgeTypes} 

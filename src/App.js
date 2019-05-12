@@ -11,13 +11,15 @@ class App extends React.Component{
 
   render() {
 
+    let minHeightPx = `${window.innerHeight}px`; 
+
     /* AQUI HACER IFs que según "checksForm", mostrará u ocultará clases de React */
     /* AQUI HACER IFs que según "checksForm", mostrará u ocultará clases de React */
     /* AQUI HACER IFs que según "checksForm", mostrará u ocultará clases de React */
     /* AQUI HACER IFs que según "checksForm", mostrará u ocultará clases de React */
 
     return (
-      <div className="App bg">
+      <div className="App bg" style={{minHeight: minHeightPx }}>
           <Switch>
             <Route exact path='/' component={Home}/>
             <Route path='/professional-experience' component={ProfessionalExperience}/>
