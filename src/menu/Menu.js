@@ -129,7 +129,7 @@ class Menu extends React.Component{
         { (this.props.knowLedgeTypes !== undefined) ? 
           <Navbar bg="dark" variant="dark" className="justify-content-between pt-0 pb-1">
             <span></span>
-            <Form inline>
+            <Form inline className="text-white">
               {checksFormList}
               <span className="mr-2"><i className="cursor-pointer fas fa-download"></i> </span>
             </Form>

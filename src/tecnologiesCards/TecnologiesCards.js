@@ -27,7 +27,7 @@ class TecnologiesCards extends React.Component{
         <Card style={{ width: '100%' }} className="TecnologiesCards p-2">
           <Card.Img variant="top" 
                     src={'../../' + this.props.outsideExperience.logoTecnologia}
-                    className="width-logo-top"/>
+                    className={'width-logo-top ' + this.props.outsideExperience.nombreTecnologia}/>
           <Card.Body className="pl-0 pr-0 margin-body-card">
             <Card.Title>{this.props.outsideExperience.nombreTecnologia}</Card.Title>        
           </Card.Body>

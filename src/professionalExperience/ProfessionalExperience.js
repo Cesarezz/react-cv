@@ -109,7 +109,7 @@ class ProfessionalExperience extends React.Component{
               <i className="fas fa-long-arrow-alt-right"></i> 
             </span>
         </span>
-        <Form inline>
+        <Form inline className="text-white">
           {checksFormListCorporations}
         </Form>
       </Navbar>}      

@@ -48,9 +48,9 @@ class OutsideExperience extends React.Component{
           
       );
 
-      this.props.outsideExperience.forEach(outsideExperience => {
+      this.props.outsideExperience.forEach((outsideExperience, indice) => {
           
-        outsideExperienceCards.push(<TecnologiesCards outsideExperience={outsideExperience}></TecnologiesCards>);
+        outsideExperienceCards.push(<TecnologiesCards key={indice} outsideExperience={outsideExperience}></TecnologiesCards>);
           
       });
 

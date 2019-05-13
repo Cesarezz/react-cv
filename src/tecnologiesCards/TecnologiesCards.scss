@@ -2,9 +2,46 @@
 
     background: #bae8bab0;
 
-    .width-logo-top{
+    .width-logo-top:not(.XSLT):not(.ECMAScript):not(.Java):not(.Spring):not(.Sass):not(.Git){
         width: 70%;
+        height:125px;
         margin-left: 15%;
+    }
+
+    .width-logo-top.Sass{
+        width: 50%;
+        height: 125px;
+        margin-left: 25%;
+    } 
+
+    .width-logo-top.XSLT{
+        height: 125px;
+        width: 110px;
+        margin-left: 35%;
+    }
+
+    .width-logo-top.ECMAScript{
+        width: 40%;
+        height: 125px;
+        margin-left: 30%;
+    }
+
+    .width-logo-top.Git{
+        width: 60%;
+        height: 125px;
+        margin-left: 20%;
+    }
+
+    .width-logo-top.Spring{
+        width: 40%;
+        height: 125px;
+        margin-left: 30%;
+    }
+
+    .width-logo-top.Java{
+        width: 55%;
+        height: 125px;
+        margin-left: 23%;
     }
 
     .margin-body-card{

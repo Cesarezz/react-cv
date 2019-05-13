@@ -50,7 +50,7 @@ const ApiOutsideExperience = [
     },
     {
       id: 5, 
-      nombreTecnologia: "ECMAScript 6",
+      nombreTecnologia: "ECMAScript",
       logoTecnologia: "img/es6.png",
       proyectos: 0,
       nivelExperiencia: 5,
@@ -85,7 +85,7 @@ const ApiOutsideExperience = [
       experienciaTiempoLibre: false,
       enlaces: [
         {
-          nombreProyecto: "Hamburguesería Elvis (BACK)",  
+          nombreProyecto: "Hamburguesería Elvis (BACK)",
           url: "https://bitbucket.org/cesarezz/elvishamburgueseria"
         },
         {
