@@ -25,7 +25,7 @@ class OutsideExperience extends React.Component{
 
       listIcons = ApiKnowLedgeTypes[1].icons.map( (icon, index) => 
       
-        <span className="mr-2" key={index}> <i className={`icono-font fas ${icon}`}></i> </span>  
+        <span className="mr-2" key={index} style={{verticalAlign: 'sub'}}> <i className={`icono-font fas ${icon}`}></i> </span>  
           
       );
 
@@ -44,7 +44,7 @@ class OutsideExperience extends React.Component{
 
       listIcons = this.props.knowLedgeType.icons.map( (icon, index) => 
       
-        <span className="mr-2" key={index}> <i className={`icono-font fas ${icon}`}></i> </span>  
+        <span className="mr-2" key={index} style={{verticalAlign: 'sub'}}> <i className={`icono-font fas ${icon}`}></i> </span>  
           
       );
 
@@ -59,7 +59,7 @@ class OutsideExperience extends React.Component{
     let containerComponentOutsideExperience = 
     <Col xl={12} lg={12} md={12} sm={12} xs={12} className="border-section-bottom mt-3 mb-3">
 
-      <Row className="border-section">
+      <Row className="border-section background-semitransparent pt-1">
 
           <Col xl={5} lg={6} md={6} sm={6} xs={8}>
 

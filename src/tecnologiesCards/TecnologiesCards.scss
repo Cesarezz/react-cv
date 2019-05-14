@@ -2,11 +2,17 @@
 
     background: #bae8bab0;
 
-    .width-logo-top:not(.XSLT):not(.ECMAScript):not(.Java):not(.Spring):not(.Sass):not(.Git){
+    .width-logo-top:not(.XSLT):not(.ECMAScript):not(.Java):not(.Spring):not(.Sass):not(.Git):not(.Angular){
         width: 70%;
         height:125px;
         margin-left: 15%;
     }
+
+    .width-logo-top.Angular{
+        width: 90%;
+        height: 125px;
+        margin-left: 5%;
+    } 
 
     .width-logo-top.Sass{
         width: 50%;
@@ -16,8 +22,8 @@
 
     .width-logo-top.XSLT{
         height: 125px;
-        width: 110px;
-        margin-left: 35%;
+        width: 38%;
+        margin-left: 31%;
     }
 
     .width-logo-top.ECMAScript{

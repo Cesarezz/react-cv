@@ -1,12 +1,13 @@
 const ApiOutsideExperience = [ 
     { 
       id: 1, 
-      nombreTecnologia: "Angular.io",
+      nombreTecnologia: "Angular 7",
       logoTecnologia: "img/angular.png",
       proyectos: 1,
       nivelExperiencia: 6,
       experienciaUniversitaria: false,
       experienciaTiempoLibre: true,
+      experienciaProfesional: false,
       enlaces: [
         {
           nombreProyecto: "Mi CV en Angular.io",  
@@ -22,6 +23,7 @@ const ApiOutsideExperience = [
       nivelExperiencia: 6,
       experienciaUniversitaria: false,
       experienciaTiempoLibre: true,
+      experienciaProfesional: false,
       enlaces: [
         {
           nombreProyecto: "Mi CV en React",  
@@ -38,6 +40,7 @@ const ApiOutsideExperience = [
       nivelExperiencia: 6,
       experienciaUniversitaria: false,
       experienciaTiempoLibre: true,
+      experienciaProfesional: true
     },
     { 
       id: 4, 
@@ -47,24 +50,27 @@ const ApiOutsideExperience = [
       nivelExperiencia: 3,
       experienciaUniversitaria: false,
       experienciaTiempoLibre: true,
+      experienciaProfesional: false
     },
     {
       id: 5, 
-      nombreTecnologia: "ECMAScript",
+      nombreTecnologia: "ECMAScript 6",
       logoTecnologia: "img/es6.png",
       proyectos: 0,
       nivelExperiencia: 5,
       experienciaUniversitaria: false,
-      experienciaTiempoLibre: true
+      experienciaTiempoLibre: true,
+      experienciaProfesional: false
     },
     {
       id: 6, 
       nombreTecnologia: "Bootstrap",
-      logoTecnologia: "img/bootstrap4.jpg",
+      logoTecnologia: "img/bootstrap.png",
       proyectos: 2,
       nivelExperiencia: 7,
       experienciaUniversitaria: false,
-      experienciaTiempoLibre: true
+      experienciaTiempoLibre: true,
+      experienciaProfesional: true
     },
     { 
       id: 7, 
@@ -73,7 +79,8 @@ const ApiOutsideExperience = [
       proyectos: 3,
       nivelExperiencia: 6,
       experienciaUniversitaria: true,
-      experienciaTiempoLibre: true
+      experienciaTiempoLibre: true,
+      experienciaProfesional: true
     },
     {
       id: 7, 
@@ -83,6 +90,7 @@ const ApiOutsideExperience = [
       nivelExperiencia: 3,
       experienciaUniversitaria: true,
       experienciaTiempoLibre: false,
+      experienciaProfesional: false,
       enlaces: [
         {
           nombreProyecto: "Hamburguesería Elvis (BACK)",
@@ -102,6 +110,7 @@ const ApiOutsideExperience = [
       nivelExperiencia: 9,
       experienciaUniversitaria: true,
       experienciaTiempoLibre: false,
+      experienciaProfesional: true,
       enlaces: [
         {
           nombreProyecto: "Hamburguesería Elvis (FRONT)",  
@@ -121,6 +130,7 @@ const ApiOutsideExperience = [
       nivelExperiencia: 9,
       experienciaUniversitaria: true,
       experienciaTiempoLibre: false,
+      experienciaProfesional: true,
       enlaces: [
         {
           nombreProyecto: "Hamburguesería Elvis (FRONT)",  
@@ -139,16 +149,18 @@ const ApiOutsideExperience = [
       proyectos: 4,
       nivelExperiencia: 4,
       experienciaUniversitaria: true,
-      experienciaTiempoLibre: false
+      experienciaTiempoLibre: false,
+      experienciaProfesional: false
     },
     {
       id: 11, 
       nombreTecnologia: "Java",
-      logoTecnologia: "img/java.jpg",
+      logoTecnologia: "img/java.png",
       proyectos: 3,
       nivelExperiencia: 3,
       experienciaUniversitaria: true,
-      experienciaTiempoLibre: false
+      experienciaTiempoLibre: false,
+      experienciaProfesional: false
     }  
   ];
 

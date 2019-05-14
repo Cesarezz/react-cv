@@ -35,7 +35,7 @@
         font-family: "Roboto_condensed";
         font-weight: bold;
         color: #FFFFFF;
-        font-size: 1.25rem;
+        font-size: 1.4rem;
         line-height: 1.1875rem;
         letter-spacing: 0rem;
 
@@ -44,6 +44,7 @@
     .subtitle-section{
 
         color: #FFFFFF;
+        font-size: 1rem;
         
     }
 
@@ -82,5 +83,9 @@
         border-radius: 0;
         
     }
+
+    .background-semitransparent{
+        background: rgba(46, 88, 46, 0.6);
+    }    
 
 }

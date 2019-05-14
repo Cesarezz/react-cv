@@ -11,7 +11,7 @@ class KnowLedgeType extends React.Component{
 
     const listIcons = this.props.knowLedgeType.icons.map( (icon, index) => 
     
-      <span className="mr-2" key={index}> <i className={`icono-font fas ${icon}`}></i> </span>  
+      <span className="mr-2" style={{verticalAlign: 'sub'}} key={index}> <i className={`icono-font fas ${icon}`}></i> </span>  
         
     );
 

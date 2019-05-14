@@ -17,10 +17,6 @@ class Menu extends React.Component{
 
   handleInChecksFormsChange(e){
 
-    console.log("e.id", e.target.id);
-
-    console.log("e.target.name", e.target.checked);
-
     const checksForm = this.props.checksForm.slice();
 
     switch(e.target.id){
