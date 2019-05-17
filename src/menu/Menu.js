@@ -111,7 +111,7 @@ class Menu extends React.Component{
             { `${diaSemana}, ${fechaActual.getDate()} de ${nombreMes} de ${fechaActual.getFullYear()}`   }
           </Navbar.Text>
           <Navbar.Brand href="/" className="pl-3">
-            <Row>CÉSAR SAN JOSÉ VIEDMA</Row>
+            <Row>CÉSAR SAN JOSÉ VIEDMA (Currículum Dinámico)</Row>
             <Row>
               <Navbar.Text className="d-none d-md-block"> 
                 React, React Bootstrap, React Navigation, Sass, JavaScript y HTML. 
@@ -123,7 +123,7 @@ class Menu extends React.Component{
           </Navbar.Brand>      
         </Navbar>
         { (this.props.knowLedgeTypes !== undefined) ? 
-          <Navbar bg="dark" variant="dark" className="justify-content-between pt-0 pb-1">
+          <Navbar variant="dark" className="justify-content-between pb-1 pt-2">
             <span></span>
             <Form inline className="text-white">
               {checksFormList}

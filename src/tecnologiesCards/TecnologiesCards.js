@@ -21,7 +21,7 @@ class TecnologiesCards extends React.Component{
         </Tooltip>
       }>
       
-        <span className="mr-2"> <i className={"icono-font fas " + icon}></i> </span>
+        <span className="mr-2"> <i className={"icono-tec fas " + icon}></i> </span>
       
       </OverlayTrigger>;
 

@@ -2,7 +2,7 @@
 
     background: #bae8bab0;
 
-    .width-logo-top:not(.XSLT):not(.ECMAScript):not(.Java):not(.Spring):not(.Sass):not(.Git):not(.Angular){
+    .width-logo-top:not(.XSLT):not(.ECMAScript):not(.Java):not(.Spring):not(.Sass):not(.Git):not(.Angular):not(.HTML5):not(.JavaScript){
         width: 70%;
         height:125px;
         margin-left: 15%;
@@ -50,10 +50,23 @@
         margin-left: 23%;
     }
 
+    .width-logo-top.HTML5, .width-logo-top.JavaScript{
+        width: 34%;
+        height: 125px;
+        margin-left: 33%;
+    }   
+
     .margin-body-card{
 
         margin-left: 15%;
         margin-right: 15%;
+
+    }
+
+    .icono-tec{
+
+        color: #0c7a9c !important;
+        font-size: 2.5rem;
 
     }
 
