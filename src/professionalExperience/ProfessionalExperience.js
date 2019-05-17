@@ -6,11 +6,79 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProfessionalExperienceCards from './professionalExperienceCards/ProfessionalExperienceCards';
 import ApiExperienceProfessional from './../api/ApiExperienceProfessional';
+import ApiCorporations from './../api/ApiCorporations';
 import ApiKnowLedgeTypes from './../api/ApiKnowLedgeTypes';
 import Container from 'react-bootstrap/Container';
+import CorporationTechnologies from './corporationTechnologies/CorporationTechnologies';
 import Menu from './../menu/Menu';
 
 class ProfessionalExperience extends React.Component{
+
+  constructor(props){
+
+    super(props);
+
+    this.state = {
+      checksFormCorporation: (this.props.indice === undefined) ? ApiCorporations.slice().fill(false): this.props.corporations.slice().fill(false)
+    };
+
+    this.onChecksFormsCorporationChange = this.handleInChecksFormsCorporationChange.bind(this);
+
+  }
+
+  handleInChecksFormsCorporationChange(e) {
+
+    const checksFormCorporation = this.state.checksFormCorporation.slice();
+
+    switch(e.target.id){
+
+      case "1-check": 
+
+        checksFormCorporation[0] = e.target.checked;
+
+        break;
+
+      case "2-check": 
+
+      checksFormCorporation[1] = e.target.checked;
+
+        break;
+
+      case "3-check": 
+
+        checksFormCorporation[2] = e.target.checked;
+
+        break;
+
+      case "4-check":
+
+        checksFormCorporation[3] = e.target.checked;
+
+        break;
+      
+      case "5-check":
+
+        checksFormCorporation[4] = e.target.checked;
+
+        break;
+
+      default: 
+
+    }
+
+    this.setState({
+      checksFormCorporation: checksFormCorporation
+    });
+
+  }
+
+  evaluateCorporationCheckForm(corporation){
+  
+    return (!this.state.checksFormCorporation[corporation.id - 1]) ? <ProfessionalExperienceCards key={corporation.id} corporation={corporation}></ProfessionalExperienceCards>
+      : ((this.props.indice !== undefined) ? (<CorporationTechnologies key={corporation.id} indice={corporation.id} corporation={corporation} experienceProfessional={this.props.professionalExperience}></CorporationTechnologies>)
+      : <CorporationTechnologies key={corporation.id} indice={corporation.id} corporation={corporation} experienceProfessional={ApiExperienceProfessional}></CorporationTechnologies>);
+
+  }
 
   render() {
 
@@ -33,15 +101,17 @@ class ProfessionalExperience extends React.Component{
           
       );    
 
-      ApiExperienceProfessional.forEach((corporation, index) => {
+      ApiCorporations.forEach((corporation, index) => {
 
           if(corporations.indexOf(corporation.nombreEmpresa) === -1){
 
             corporations.push(corporation.nombreEmpresa);
 
           } 
+
+          let professionalExperienceCorporation = this.evaluateCorporationCheckForm(corporation);
           
-          corporationsCards.push(<ProfessionalExperienceCards key={index} corporation={corporation}></ProfessionalExperienceCards>);
+          corporationsCards.push(professionalExperienceCorporation);
           
       });     
 
@@ -59,15 +129,17 @@ class ProfessionalExperience extends React.Component{
           
       );    
 
-      this.props.professionalExperience.forEach(corporation => {
+      this.props.corporations.forEach(corporation => {
 
           if(corporations.indexOf(corporation.nombreEmpresa) === -1){
 
-            corporations.push(corporation.nombreEmpresa);
+            corporations.push({id: corporation.id, name: corporation.nombreEmpresa});
 
           } 
+
+          let professionalExperienceCorporation = this.evaluateCorporationCheckForm(corporation);
           
-          corporationsCards.push(<ProfessionalExperienceCards corporation={corporation}></ProfessionalExperienceCards>);
+          corporationsCards.push(professionalExperienceCorporation);
           
       });
 
@@ -78,9 +150,10 @@ class ProfessionalExperience extends React.Component{
             key={index}
             custom
             inline
-            label={corporation}
+            label={corporation.name} 
             type="checkbox"
-            id={`${corporation}-check`}
+            onChange={this.onChecksFormsCorporationChange}
+            id={`${corporation.id}-check`}
           />
 
       );
