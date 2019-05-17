@@ -114,7 +114,7 @@ class Menu extends React.Component{
             <Row>CÉSAR SAN JOSÉ VIEDMA (Currículum Dinámico)</Row>
             <Row>
               <Navbar.Text className="d-none d-md-block"> 
-                React, React Bootstrap, React Navigation, Sass, JavaScript y HTML. 
+              Desarrollo de la web: ReactJS, React Router, React Bootstrap, Sass, JavaScript y HTML. 
               </Navbar.Text>
             </Row>            
           </Navbar.Brand>
