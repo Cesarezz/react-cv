@@ -10,7 +10,13 @@ import Menu from './../menu/Menu';
 
 class OutsideExperience extends React.Component{
 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render(){
+
+    
 
     let outsideExperienceCards = [];
 

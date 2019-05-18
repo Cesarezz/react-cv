@@ -11,6 +11,10 @@ import Card from 'react-bootstrap/Card';
 
 class CorporationTechnologies extends React.Component{
 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render(){
 
     let technologiesCards = [];
