@@ -2,65 +2,65 @@
 
     background: #bae8bab0;
 
-    .width-logo-top:not(.XSLT):not(.ECMAScript):not(.Java):not(.Spring):not(.Sass):not(.Git):not(.Angular):not(.HTML5):not(.JavaScript){
+    .width-logo-top{
         width: 70%;
-        height:125px;
         margin-left: 15%;
+        height: 125px;
     }
 
-    .width-logo-top.Angular{
+    .width-logo-top.Angular, .width-logo-top.jQuery, .width-logo-top.Drools, .width-logo-top.Pentaho {
         width: 90%;
-        height: 125px;
         margin-left: 5%;
     } 
 
     .width-logo-top.Sass{
         width: 50%;
-        height: 125px;
         margin-left: 25%;
     } 
 
     .width-logo-top.XSLT{
-        height: 125px;
         width: 38%;
         margin-left: 31%;
     }
 
-    .width-logo-top.ECMAScript{
+    .width-logo-top.ECMAScript, .width-logo-top.Spring{
         width: 40%;
-        height: 125px;
         margin-left: 30%;
     }
 
-    .width-logo-top.Git{
+    .width-logo-top.Git, .width-logo-top.ZK{
         width: 60%;
-        height: 125px;
         margin-left: 20%;
-    }
-
-    .width-logo-top.Spring{
-        width: 40%;
-        height: 125px;
-        margin-left: 30%;
     }
 
     .width-logo-top.Java{
         width: 55%;
-        height: 125px;
         margin-left: 23%;
     }
 
-    .width-logo-top.HTML5, .width-logo-top.JavaScript{
+    .width-logo-top.HTML5, .width-logo-top.JavaScript, .width-logo-top.Birt{
         width: 34%;
-        height: 125px;
         margin-left: 33%;
     }   
 
-    .margin-body-card{
+    .width-logo-top.d3js{
+        margin-left: 30%;
+        width: 40%;
+    }
 
+    .width-logo-top.Gulp{
+        margin-left: 40%;
+        width: 20%;
+    }
+
+    .width-logo-top.SVN{
+        margin-left: 26%;
+        width: 48%;
+    }
+
+    .margin-body-card{
         margin-left: 15%;
         margin-right: 15%;
-
     }
 
     .icono-tec{

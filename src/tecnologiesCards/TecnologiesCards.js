@@ -54,18 +54,18 @@ class TecnologiesCards extends React.Component{
       <Col xl={4} lg={6} md={6} sm={6} xs={12} className="mt-2 mb-2">
         <Card style={{ width: '100%' }} className="TecnologiesCards p-2">
           <Card.Img variant="top" 
-                    src={'../../' + this.props.outsideExperience.logoTecnologia}
-                    className={'width-logo-top ' + this.props.outsideExperience.nombreTecnologia}/>
+                    src={'../../' + this.props.technologie.logoTecnologia}
+                    className={'width-logo-top ' + this.props.technologie.nombreTecnologia}/>
           <Card.Body className="pl-0 pr-0 margin-body-card">
-            <Card.Title>{this.props.outsideExperience.nombreTecnologia}</Card.Title>    
+            <Card.Title>{this.props.technologie.nombreTecnologia}</Card.Title>    
             <Card.Text>
                 Tipo de experiencia
             </Card.Text>    
             <ListGroup className="list-group-flush mb-3">
               <ListGroup.Item style={{background: 'transparent'}}>
-                {this.iconTooltipGenerator(this.props.outsideExperience.experienciaProfesional, 1, 'fa-business-time', professionalTooltip)}
-                {this.iconTooltipGenerator(this.props.outsideExperience.experienciaUniversitaria, 2, 'fa-graduation-cap', universitariaTooltip)}
-                {this.iconTooltipGenerator(this.props.outsideExperience.experienciaTiempoLibre, 3, 'fa-home', tiempoLibreTooltip)}
+                {this.iconTooltipGenerator(this.props.technologie.experienciaProfesional, 1, 'fa-business-time', professionalTooltip)}
+                {this.iconTooltipGenerator(this.props.technologie.experienciaUniversitaria, 2, 'fa-graduation-cap', universitariaTooltip)}
+                {this.iconTooltipGenerator(this.props.technologie.experienciaTiempoLibre, 3, 'fa-home', tiempoLibreTooltip)}
               </ListGroup.Item>
               <ListGroup.Item style={{background: 'transparent', border: 'none'}}>
                

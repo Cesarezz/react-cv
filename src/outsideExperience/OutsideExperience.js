@@ -31,7 +31,7 @@ class OutsideExperience extends React.Component{
 
       ApiOutsideExperience.forEach(outsideExperience => {
           
-        outsideExperienceCards.push(<TecnologiesCards outsideExperience={outsideExperience}></TecnologiesCards>);
+        outsideExperienceCards.push(<TecnologiesCards technologie={outsideExperience}></TecnologiesCards>);
           
       });
 
@@ -50,7 +50,7 @@ class OutsideExperience extends React.Component{
 
       this.props.outsideExperience.forEach((outsideExperience, indice) => {
           
-        outsideExperienceCards.push(<TecnologiesCards key={indice} outsideExperience={outsideExperience}></TecnologiesCards>);
+        outsideExperienceCards.push(<TecnologiesCards key={indice} technologie={outsideExperience}></TecnologiesCards>);
           
       });
 

@@ -14,7 +14,7 @@ const ApiExperienceProfessional = [
   {
     id: 2, 
     nombreTecnologia: "d3js",
-    logoTecnologia: "img/d3js.png",
+    logoTecnologia: "img/d3.png",
     nivelExperiencia: 7,
     corporationsKey: [5],
     experienciaUniversitaria: false,
@@ -120,7 +120,7 @@ const ApiExperienceProfessional = [
   { 
     id: 7, 
     nombreTecnologia: "CSS3",
-    logoTecnologia: "img/css3.png",
+    logoTecnologia: "img/css3.svg",
     nivelExperiencia: 7,
     corporationsKey: [5,4,3],
     experienciaUniversitaria: true,
@@ -299,7 +299,7 @@ const ApiExperienceProfessional = [
   {
     id: 18, 
     nombreTecnologia: "ZK Framework",
-    logoTecnologia: "img/zk.png",
+    logoTecnologia: "img/zk.jpg",
     nivelExperiencia: 2,
     corporationsKey: [2],
     experienciaUniversitaria: false,
@@ -310,8 +310,8 @@ const ApiExperienceProfessional = [
   },
   {
     id: 19, 
-    nombreTecnologia: "Java Drools",
-    logoTecnologia: "img/drools.png",
+    nombreTecnologia: "Drools",
+    logoTecnologia: "img/drools.gif",
     nivelExperiencia: 2,
     corporationsKey: [2],
     experienciaUniversitaria: false,

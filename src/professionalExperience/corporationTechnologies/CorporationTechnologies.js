@@ -15,7 +15,7 @@ class CorporationTechnologies extends React.Component{
 
     let technologiesCards = [];
 
-    let headerStatic, nombreEmpresa, nombreConsultora, logoEmpresa = null;
+    let headerStatic, nombreEmpresa, nombreConsultora, logoEmpresa, tareasList = null;
 
     //Si se cumple lo siguiente es que estamos accediendo por enrutamiento
     if(this.props.indice === undefined){
@@ -40,13 +40,24 @@ class CorporationTechnologies extends React.Component{
 
       const technologiesCorporation = technologiesAll.filter(technologie => technologie.corporationsKey.indexOf(this.props.corporation.id) !== -1);
 
+      technologiesCorporation.map((technologieCorp, indice) => {
+          
+        technologiesCards.push(<TecnologiesCards key={indice} technologie={technologieCorp}></TecnologiesCards>);
+          
+      });
+
+      tareasList = this.props.corporation.tareas.map( (tarea, index) =>
+        <span key={index}
+              className="hashtag-style-toolbar mr-2"> #{tarea}</span>
+      );
+
     }
 
     let containerComponentProfessionalExperience = 
     <Col xl={12} lg={12} md={12} sm={12} xs={12} className="CorporationTechnologies border-section-bottom mt-3 mb-3">
 
       <Row className="border-section background-semitransparent pt-1">
-        <Col xl={5} lg={6} md={6} sm={6} xs={8} className="pb-1">
+        <Col xl={4} lg={4} md={6} sm={6} xs={8} className="pb-1">
           <Row className="mb-2 title-section">
             <Col xl={12} lg={12} md={12} sm={12} xs={12}>Experiencia en {nombreEmpresa} </Col>
           </Row>
@@ -56,7 +67,12 @@ class CorporationTechnologies extends React.Component{
             </Row>
           }       
         </Col>
-        <Col xl={7} lg={6} md={6} sm={6} xs={4} className="text-right toolbar-corporation pb-1">
+        <Col xl={6} lg={6} md={6} sm={6} xs={8} className="pb-1">
+            <Row className="tareas-tags">
+              {tareasList}
+            </Row>
+        </Col>
+        <Col xl={2} lg={2} md={6} sm={6} xs={4} className="text-right toolbar-corporation pb-1">
           <Card.Img variant="top" 
                     src={'../../' + logoEmpresa}
                     className="width-logo-top logo-toolbar-corporation"/>
