@@ -44,7 +44,7 @@ class Home extends React.Component{
     const listCardsknowLedgeTypes = ApiKnowLedgeTypes.map((knowLedgeTypeElem, index) =>
       { 
         return ((!checksForm[index]) ? 
-        <KnowLedgeType indice={knowLedgeTypeElem.id} knowLedgeType={knowLedgeTypeElem}></KnowLedgeType>
+        <KnowLedgeType key={knowLedgeTypeElem.id} indice={knowLedgeTypeElem.id} knowLedgeType={knowLedgeTypeElem}></KnowLedgeType>
         :((index === 0) ?  <ProfessionalExperience key={knowLedgeTypeElem.id}
                                                    indice={knowLedgeTypeElem.id} 
                                                    knowLedgeType={knowLedgeTypeElem} 

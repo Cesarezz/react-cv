@@ -55,6 +55,8 @@ class Menu extends React.Component{
 
   render() {
 
+    const locationURL = window.location.origin;
+
     let fechaActual = new Date();
     let weekdays = new Array(7);
     weekdays[0] = "Domingo";
@@ -118,8 +120,9 @@ class Menu extends React.Component{
               </Navbar.Text>
             </Row>            
           </Navbar.Brand>
-          <Navbar.Brand href="img/CesarSanJoseViedma.jpg" className="p-0">
-              <Image src="img/CesarSanJoseViedma.jpg" roundedCircle className="image-cv"/>
+          <Navbar.Brand href={ (this.props.location) ? `${locationURL}/img/CesarSanJoseViedma.jpg`: "./img/CesarSanJoseViedma.jpg"} 
+                        className="p-0">
+              <Image src={(this.props.imageHref) ? this.props.imageHref :"img/CesarSanJoseViedma.jpg"} roundedCircle className="image-cv"/>
           </Navbar.Brand>      
         </Navbar>
         { (this.props.knowLedgeTypes !== undefined) ? 

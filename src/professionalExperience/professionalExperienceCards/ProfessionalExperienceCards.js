@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { Link } from 'react-router-dom';
 
 class ProfessionalExperienceCards extends React.Component{
 
@@ -53,8 +54,13 @@ class ProfessionalExperienceCards extends React.Component{
             <ListGroup className="list-group-flush mb-3">
                 {tareasListGroup}
             </ListGroup>
+
+            <Button variant="primary" className="button-enlace"> 
+              <Link to={`/professional-experience/corporation-experience/${this.props.corporation.id}`}>
+                  Ir a experiencia en {this.props.corporation.nombreEmpresa}
+              </Link>            
+            </Button>
             
-            <Button variant="primary">Ir a experiencia en {this.props.corporation.nombreEmpresa}</Button>
           </Card.Body>
         </Card>
       </Col>

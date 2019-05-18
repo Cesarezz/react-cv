@@ -88,6 +88,8 @@ class ProfessionalExperience extends React.Component{
     let checksFormListCorporations;
     let headerStatic, name, description, listIcons = null;
 
+    let { location } = this.props;
+
     //Si se cumple lo siguiente es que estamos accediendo por enrutamiento
     if(this.props.indice === undefined){
 
@@ -196,7 +198,7 @@ class ProfessionalExperience extends React.Component{
       headerStatic = 
         <Container fluid="true" className="h-100">
           <Row>
-            <Menu />
+            <Menu imageHref="./../../img/CesarSanJoseViedma.jpg" location={location}/>
           </Row>
           <Row className="bg">
             {containerComponentProfessionalExperience}
