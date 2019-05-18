@@ -8,10 +8,15 @@
         height: 125px;
     }
 
-    .width-logo-top.Angular, .width-logo-top.jQuery, .width-logo-top.Drools, .width-logo-top.Pentaho {
+    .width-logo-top.Angular, .width-logo-top.Drools, .width-logo-top.Pentaho {
         width: 90%;
         margin-left: 5%;
     } 
+
+    .width-logo-top.jQuery{
+        width: 76%;
+        margin-left: 12%;
+    }        
 
     .width-logo-top.Sass{
         width: 50%;
@@ -23,7 +28,7 @@
         margin-left: 31%;
     }
 
-    .width-logo-top.ECMAScript, .width-logo-top.Spring{
+    .width-logo-top.ECMAScript, .width-logo-top.Spring, .width-logo-top.JSPM{
         width: 40%;
         margin-left: 30%;
     }
