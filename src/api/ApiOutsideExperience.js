@@ -11,7 +11,11 @@ const ApiOutsideExperience = [
         {
           nombreProyecto: "Mi CV en Angular.io",  
           url: "https://github.com/Cesarezz/cv-angular-front"
-        }      
+        },
+        {
+          nombreProyecto: "Galería Imágenes Curso Angular 7",
+          url: "https://github.com/Cesarezz/Galeriaimages1"
+        } 
       ],
       libraries: []
     },
@@ -151,11 +155,11 @@ const ApiOutsideExperience = [
       experienciaProfesional: false,
       enlaces: [
         {
-          nombreProyecto: "Hamburguesería Elvis (BACK)",
+          nombreProyecto: "Hamburguesería Elvis",
           url: "https://bitbucket.org/cesarezz/elvishamburgueseria"
         },
         {
-          nombreProyecto: "PFM Videoclub (BACK)",  
+          nombreProyecto: "PFM Videoclub",  
           url: "https://bitbucket.org/cesarezz/videoclub"
         }      
       ],
@@ -171,11 +175,11 @@ const ApiOutsideExperience = [
       experienciaProfesional: true,
       enlaces: [
         {
-          nombreProyecto: "Hamburguesería Elvis (FRONT)",  
+          nombreProyecto: "Hamburguesería Elvis",  
           url: "https://bitbucket.org/cesarezz/ngelvishamburguer"
         },
         {
-          nombreProyecto: "PFM Videoclub (FRONT)",  
+          nombreProyecto: "PFM Videoclub",  
           url: "https://bitbucket.org/cesarezz/ngvideoclub"
         }            
       ],
@@ -191,13 +195,9 @@ const ApiOutsideExperience = [
       experienciaProfesional: true,
       enlaces: [
         {
-          nombreProyecto: "Hamburguesería Elvis (FRONT)",  
+          nombreProyecto: "Hamburguesería Elvis",  
           url: "https://bitbucket.org/cesarezz/ngelvishamburguer"
-        },
-        {
-          nombreProyecto: "PFM Videoclub (FRONT)",  
-          url: "https://bitbucket.org/cesarezz/ngvideoclub"
-        }            
+        }           
       ],
       libraries: []
     },

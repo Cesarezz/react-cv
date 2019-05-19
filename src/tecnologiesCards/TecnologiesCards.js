@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Nav from 'react-bootstrap/Nav'
 
 class TecnologiesCards extends React.Component{
 
@@ -35,6 +36,15 @@ class TecnologiesCards extends React.Component{
 
     let professionalTooltip = "Experiencia Profesional";
 
+    const enlacesTechnologie = (this.props.technologie.enlaces) ? this.props.technologie.enlaces.map( (enlace, index) =>
+    
+      <ListGroup.Item key={index}
+                      className="background-transparent pl-2 pr-2"> 
+          <Nav.Link href={enlace.url} target="_blank" className="pl-0 pr-0 enlace-git-bit">{enlace.nombreProyecto}</Nav.Link>  
+      </ListGroup.Item> 
+    
+    ) : null;
+
     /*
     
       {
@@ -62,13 +72,10 @@ class TecnologiesCards extends React.Component{
                 Tipo de experiencia
             </Card.Text>    
             <ListGroup className="list-group-flush mb-3">
-              <ListGroup.Item style={{background: 'transparent'}}>
+              <ListGroup.Item className="background-transparent">
                 {this.iconTooltipGenerator(this.props.technologie.experienciaProfesional, 1, 'fa-business-time', professionalTooltip)}
                 {this.iconTooltipGenerator(this.props.technologie.experienciaUniversitaria, 2, 'fa-graduation-cap', universitariaTooltip)}
                 {this.iconTooltipGenerator(this.props.technologie.experienciaTiempoLibre, 3, 'fa-home', tiempoLibreTooltip)}
-              </ListGroup.Item>
-              <ListGroup.Item style={{background: 'transparent', border: 'none'}}>
-               
               </ListGroup.Item>
             </ListGroup>
             <Card.Text>
@@ -76,11 +83,27 @@ class TecnologiesCards extends React.Component{
             </Card.Text>    
             <ListGroup className="list-group-flush mb-3">
             
-              <ListGroup.Item style={{background: 'transparent'}}>
+              <ListGroup.Item className="background-transparent">
                
-               </ListGroup.Item>
+              </ListGroup.Item>
             
             </ListGroup>
+
+            {
+                enlacesTechnologie && (enlacesTechnologie.length > 0) &&
+                (<> 
+                  <Card.Text>
+                      Github y Bitbucket personal.
+                  </Card.Text>    
+                  <ListGroup className="list-group-flush mb-3">
+                  
+                    {enlacesTechnologie}
+                  
+                  </ListGroup>
+                </>)
+            }
+
+            
           </Card.Body>
         </Card>
       </Col>

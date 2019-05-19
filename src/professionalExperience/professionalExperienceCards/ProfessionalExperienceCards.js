@@ -53,10 +53,14 @@ class ProfessionalExperienceCards extends React.Component{
                 {this.props.corporation.nombreConsultora} (Consultora)
               </Card.Text>
             }
-            <Card.Text>
+            <Card.Text className={`mb-0 ${ (this.props.corporation.hasta !== null) && ' text-center' }`}>
               {this.props.corporation.desde} {this.props.corporation.hasta !== null && iconoHex} {this.props.corporation.hasta !== null && ` ${this.props.corporation.hasta}`}
             </Card.Text>
-             
+            {this.props.corporation.tiempo !== null && 
+              <Card.Text className="mb-1 text-center">
+                {this.props.corporation.tiempo}
+              </Card.Text>
+            }
             <ListGroup className="list-group-flush mb-3">
                 {tareasListGroup}
             </ListGroup>

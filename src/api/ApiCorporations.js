@@ -7,6 +7,7 @@ const ApiCorporations = [
       logoConsultora: null,
       desde: "Octubre 2016",
       hasta: null, 
+      tiempo: null,
       puesto: "Desarrollador Front-End",
       tareas: ["ProgramaciónWeb", "Maquetación", "DiseñoWeb", "HojasDeEstilo", "ExperienciaDeUsuario"]
     },
@@ -18,6 +19,7 @@ const ApiCorporations = [
       logoConsultora: "img/connectis.jpg",
       desde: "Diciembre 2015",
       hasta: "Octubre 2016", 
+      tiempo: "9 meses",
       puesto: "Desarrollador Front-End",
       tareas: ["ProgramaciónWeb", "Maquetación", "DiseñoWeb", "HojasDeEstilo", "ExperienciaDeUsuario", "ProcesosTesting"]
     },
@@ -29,6 +31,7 @@ const ApiCorporations = [
       logoConsultora: "img/agioglobal.png",
       desde: "Junio 2015",
       hasta: "Diciembre 2015",
+      tiempo: "7 meses",
       puesto: "Desarrollador Front-End",
       tareas: ["ProgramaciónWeb", "Maquetación", "DiseñoWeb", "HojasDeEstilo", "ExperienciaDeUsuario"]
     },
@@ -40,6 +43,7 @@ const ApiCorporations = [
       logoConsultora: null,
       desde: "Agosto 2014",
       hasta: "Junio 2015",
+      tiempo: "11 meses",
       puesto: "Programador junior",
       tareas: ["ReglasAplicaciónCallCenter", "InformesBIRT", "AutomatizaciónDeProcesos"]
     },
@@ -51,6 +55,7 @@ const ApiCorporations = [
         logoConsultora: null,
         desde: "Octubre 2013",
         hasta: "Julio 2014",
+        tiempo: "10 meses",
         puesto: "Programador SQL",
         tareas: ["ConsultasSQL", "AutomatizaciónDeProcesos"]
     }  

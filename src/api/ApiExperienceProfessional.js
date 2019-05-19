@@ -21,8 +21,8 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: [
-      {
+    libraries: {
+      "5": [{
         name: "angular-calendar-heatmap",
         url: "https://github.com/g1eb/angular-calendar-heatmap"
       },
@@ -33,8 +33,9 @@ const ApiExperienceProfessional = [
       {
         name: "Collapsible Tree Layout",
         url: "https://observablehq.com/@d3/collapsible-tree"
-      }
-    ]
+      }]
+
+    }
   },
   {
     id: 3, 
@@ -58,40 +59,34 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: true,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: [
-      {
-        name: "VivaGraphJS",
-        url: "https://github.com/anvaka/VivaGraphJS"
-      },
-      {
-        name: "Angular UI Bootstrap",
-        url: "https://angular-ui.github.io/bootstrap/"
-      },
-      {
-        name: "dom-to-image",
-        url: "https://github.com/tsayen/dom-to-image"
-      },
-      {
-        name: "Jasmine",
-        url: "https://github.com/jasmine/jasmine"
-      },
-      {
-        name: "ArcGIS",
-        url: "https://developers.arcgis.com/javascript/"
-      },
-      {
-        name: "EasyTree",
-        url: "http://www.easyjstree.com/"
-      },
-      {
-        name: "textAngular",
-        url: "https://github.com/textAngular/textAngular"
-      },
-      {
-        name: "ArcGIS",
-        url: "https://developers.arcgis.com/javascript/"
-      }
-    ]
+    libraries: {
+      "5": [
+        {
+          name: "VivaGraphJS",
+          url: "https://github.com/anvaka/VivaGraphJS"
+        },
+        {
+          name: "dom-to-image",
+          url: "https://github.com/tsayen/dom-to-image"
+        }
+      ],
+      "4": [
+        {
+          name: "Jasmine",
+          url: "https://github.com/jasmine/jasmine"
+        }
+      ],
+      "3": [
+        {
+          name: "ArcGIS",
+          url: "https://developers.arcgis.com/javascript/"
+        },
+        {
+          name: "EasyTree",
+          url: "http://www.easyjstree.com/"
+        }
+      ]
+    }
   },
   { 
     id: 5, 
@@ -222,46 +217,36 @@ const ApiExperienceProfessional = [
     experienciaUniversitaria: true,
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
-    enlaces: [
-      {
-        nombreProyecto: "Hamburguesería Elvis (FRONT)",  
-        url: "https://bitbucket.org/cesarezz/ngelvishamburguer"
-      },
-      {
-        nombreProyecto: "PFM Videoclub (FRONT)",  
-        url: "https://bitbucket.org/cesarezz/ngvideoclub"
-      }            
-    ],
-    libraries: [
-      {
-        name: "Angular UI Bootstrap",
-        url: "https://angular-ui.github.io/bootstrap/"
-      },
-      {
-        name: "Angular-Bootstrap-Duallistbox",
-        url: "https://github.com/frapontillo/angular-bootstrap-duallistbox"
-      },
-      {
-        name: "Angular UI Sortable",
-        url: "https://github.com/angular-ui/ui-sortable"
-      },
-      {
-        name: "textAngular",
-        url: "https://github.com/textAngular/textAngular"
-      },
-      {
-        name: "Ui-Grid",
-        url: "https://github.com/angular-ui/ui-grid"
-      }, 
-      {
-        name: "Ui-Grid",
-        url: "https://github.com/angular-ui/ui-grid"
-      }, 
-      {
-        name: "Protractor Angular",
-        url: "https://www.protractortest.org"
-      }
-    ]
+    libraries: {
+      "5":[
+        {
+          name: "Angular UI Bootstrap",
+          url: "https://angular-ui.github.io/bootstrap/"
+        },
+        {
+          name: "Angular-Bootstrap-Duallistbox",
+          url: "https://github.com/frapontillo/angular-bootstrap-duallistbox"
+        },
+        {
+          name: "Angular UI Sortable",
+          url: "https://github.com/angular-ui/ui-sortable"
+        }
+      ],
+      "4":[
+        {
+          name: "textAngular",
+          url: "https://github.com/textAngular/textAngular"
+        },
+        {
+          name: "Ui-Grid",
+          url: "https://github.com/angular-ui/ui-grid"
+        },
+        {
+          name: "Protractor Angular",
+          url: "https://www.protractortest.org"
+        }
+      ]
+    }
   },
   {
     id: 16, 
@@ -272,16 +257,6 @@ const ApiExperienceProfessional = [
     experienciaUniversitaria: true,
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
-    enlaces: [
-      {
-        nombreProyecto: "Hamburguesería Elvis (FRONT)",  
-        url: "https://bitbucket.org/cesarezz/ngelvishamburguer"
-      },
-      {
-        nombreProyecto: "PFM Videoclub (FRONT)",  
-        url: "https://bitbucket.org/cesarezz/ngvideoclub"
-      }            
-    ],
     libraries: []
   },
   {
