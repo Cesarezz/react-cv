@@ -32,6 +32,8 @@ class ProfessionalExperienceCards extends React.Component{
     
     );
 
+    let iconoHex = <span className="m-2"> &#x2794; </span>;
+
     return(
 
       <Col xl={4} lg={6} md={6} sm={6} xs={12} className="mt-2 mb-2">
@@ -51,6 +53,10 @@ class ProfessionalExperienceCards extends React.Component{
                 {this.props.corporation.nombreConsultora} (Consultora)
               </Card.Text>
             }
+            <Card.Text>
+              {this.props.corporation.desde} {this.props.corporation.hasta !== null && iconoHex} {this.props.corporation.hasta !== null && ` ${this.props.corporation.hasta}`}
+            </Card.Text>
+             
             <ListGroup className="list-group-flush mb-3">
                 {tareasListGroup}
             </ListGroup>
