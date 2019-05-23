@@ -80,6 +80,67 @@
         font-weight: 700;
     } 
 
+    .bar-colors .v10, .bar-colors .v9, .bar-colors .v8, .bar-colors .v7, .bar-colors .v6, .bar-colors .v5, .bar-colors .v4, .bar-colors .v3, .bar-colors .v2, .bar-colors .v{
+        height: 11px;
+        position: absolute;
+        width: 20px;
+        bottom: 0;
+    }
+
+    .bar-colors .v{
+        background: rgb(255, 0, 0);
+        left: 0px;
+    }    
+
+    .bar-colors .v2{
+        background: rgba(255, 0, 0, 0.8);
+        left: 25px;	
+    }
+
+    .bar-colors .v3{
+        background: rgba(255, 0, 0, 0.7);
+        left: 50px;
+    }
+        
+    .bar-colors .v4{
+        background: rgba(255, 0, 0, 0.5);
+        left: 75px;
+    }
+
+    .bar-colors .v5{
+        background: rgba(255, 0, 0, 0.3);
+        left: 100px;
+    }
+
+    .bar-colors .v6{
+        background: rgba(127, 204, 9, 0.3);
+        left: 125px;
+    }
+
+    .bar-colors .v7{
+        background: rgba(127, 204, 9, 0.5);
+        left: 150px;
+    }
+
+    .bar-colors .v8{
+        background: rgba(127, 204, 9, 0.70);
+        left: 175px;
+    }
+
+    .bar-colors .v9{
+        background: rgba(127, 204, 9, 0.80);
+        left: 200px;
+    }
+
+    .bar-colors .v10{
+        background: rgba(127, 204, 9, 1);
+        left: 225px;
+    }
+
+    .bar-colors .no-color-barcolors{
+        background: #d3d3d357;        
+    }
+
 }
 
 
