@@ -1,6 +1,6 @@
 .TecnologiesCards{
 
-    background: #bae8bab0;
+    background: #7ca97ceb;
 
     .width-logo-top{
         width: 70%;
@@ -113,32 +113,33 @@
     }
 
     .bar-colors .v6{
-        background: rgba(127, 204, 9, 0.3);
+        background: rgba(73, 255, 0, 0.3);
         left: 125px;
     }
 
     .bar-colors .v7{
-        background: rgba(127, 204, 9, 0.5);
+        background: rgba(73, 255, 0, 0.5);
         left: 150px;
     }
 
     .bar-colors .v8{
-        background: rgba(127, 204, 9, 0.70);
+        background: rgba(73, 255, 0, 0.70);
         left: 175px;
     }
 
     .bar-colors .v9{
-        background: rgba(127, 204, 9, 0.80);
+        background: rgba(73, 255, 0, 0.80);
         left: 200px;
     }
 
     .bar-colors .v10{
-        background: rgba(127, 204, 9, 1);
+        background: rgba(73, 255, 0, 1);
         left: 225px;
     }
 
     .bar-colors .no-color-barcolors{
-        background: #d3d3d357;        
+        background: #d3d3d357;       
+        display:none; 
     }
 
 }

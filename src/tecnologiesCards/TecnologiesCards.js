@@ -84,7 +84,7 @@ class TecnologiesCards extends React.Component{
             <ListGroup className="list-group-flush mb-3">
             
               <ListGroup.Item className="background-transparent">
-              <div className="card-body bar-colors">
+              <div className="bar-colors">
                   <div className={`v ${((this.props.technologie.nivelExperiencia === 0) ? " no-color-barcolors": "")}`}></div>
                   <div className={`v2 ${((this.props.technologie.nivelExperiencia <= 1) ? " no-color-barcolors": "")}`}></div>
                   <div className={`v3 ${((this.props.technologie.nivelExperiencia <= 2) ? " no-color-barcolors": "")}`}></div>
