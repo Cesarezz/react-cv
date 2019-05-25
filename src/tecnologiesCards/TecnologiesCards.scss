@@ -80,11 +80,15 @@
         font-weight: 700;
     } 
 
+    .bar-colors{
+        height: 0px;
+    }
+
     .bar-colors .v10, .bar-colors .v9, .bar-colors .v8, .bar-colors .v7, .bar-colors .v6, .bar-colors .v5, .bar-colors .v4, .bar-colors .v3, .bar-colors .v2, .bar-colors .v{
         height: 11px;
         position: absolute;
         width: 20px;
-        bottom: 0;
+        top: 25%;
     }
 
     .bar-colors .v{

@@ -63,7 +63,7 @@ class CorporationTechnologies extends React.Component{
 
     technologiesCorporation.map((technologieCorp, indice) => {
           
-      technologiesCards.push(<TecnologiesCards key={indice} technologie={technologieCorp}></TecnologiesCards>);
+      technologiesCards.push(<TecnologiesCards key={indice} technologie={technologieCorp} corporationId={corporation.id} ></TecnologiesCards>);
         
     });
 

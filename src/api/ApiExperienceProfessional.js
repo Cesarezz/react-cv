@@ -9,7 +9,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: true,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   {
     id: 2, 
@@ -47,7 +47,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: true,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   {
     id: 4, 
@@ -98,7 +98,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   { 
     id: 6, 
@@ -110,7 +110,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: true,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   { 
     id: 7, 
@@ -122,7 +122,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: true,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   {
     id: 8, 
@@ -134,7 +134,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: true,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   {
     id: 9, 
@@ -146,7 +146,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   { 
     id: 10, 
@@ -158,7 +158,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   { 
     id: 11, 
@@ -170,7 +170,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   { 
     id: 12, 
@@ -182,7 +182,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: true,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   { 
     id: 13, 
@@ -194,7 +194,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   { 
     id: 14, 
@@ -206,7 +206,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: true,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   {
     id: 15, 
@@ -257,7 +257,7 @@ const ApiExperienceProfessional = [
     experienciaUniversitaria: true,
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
-    libraries: []
+    libraries: null
   },
   {
     id: 17, 
@@ -269,7 +269,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   {
     id: 18, 
@@ -281,7 +281,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   {
     id: 19, 
@@ -293,7 +293,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   {
     id: 20, 
@@ -305,7 +305,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   },
   {
     id: 21, 
@@ -317,7 +317,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   }, 
   {
     id: 22, 
@@ -329,7 +329,7 @@ const ApiExperienceProfessional = [
     experienciaTiempoLibre: false,
     experienciaProfesional: true,
     enlaces: [],
-    libraries: []
+    libraries: null
   }
 ];
   

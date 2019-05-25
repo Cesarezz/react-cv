@@ -183,10 +183,7 @@ class ProfessionalExperience extends React.Component{
       </Row>
       {(this.props.indice === undefined) ? "": <Navbar className="justify-content-between">
         <span>
-            <span className="text-white">Ver "Empresas" en detalle </span>
-            <span className="ml-3 text-white">
-              <i className="fas fa-long-arrow-alt-right"></i> 
-            </span>
+            <span className="text-white"></span>
         </span>
         <Form inline className="text-white">
           {checksFormListCorporations}

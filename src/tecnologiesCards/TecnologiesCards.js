@@ -45,6 +45,26 @@ class TecnologiesCards extends React.Component{
     
     ) : null;
 
+    const librariesTechnologieCorporation = ((this.props.technologie.libraries) && (Object.values(this.props.technologie.libraries).length > 0) && (this.props.corporationId)) ? this.props.technologie.libraries[this.props.corporationId.toString()].map( (librarie, index) =>
+    
+      <ListGroup.Item key={index}
+                      className="background-transparent pl-2 pr-2"> 
+          <Nav.Link href={librarie.url} target="_blank" className="pl-0 pr-0 enlace-git-bit">{librarie.name}</Nav.Link>  
+      </ListGroup.Item> 
+    
+    ) : (((this.props.technologie.libraries) && (Object.values(this.props.technologie.libraries).length > 0) && (!this.props.corporationId)) ? 
+    
+    this.props.technologie.libraries["outside"].map( (librarie, index) =>
+    
+      <ListGroup.Item key={index}
+                      className="background-transparent pl-2 pr-2"> 
+          <Nav.Link href={librarie.url} target="_blank" className="pl-0 pr-0 enlace-git-bit">{librarie.name}</Nav.Link>  
+      </ListGroup.Item> 
+    
+    )
+    
+    : null);
+
     /*
     
       {
@@ -84,18 +104,18 @@ class TecnologiesCards extends React.Component{
             <ListGroup className="list-group-flush mb-3">
             
               <ListGroup.Item className="background-transparent">
-              <div className="bar-colors">
-                  <div className={`v ${((this.props.technologie.nivelExperiencia === 0) ? " no-color-barcolors": "")}`}></div>
-                  <div className={`v2 ${((this.props.technologie.nivelExperiencia <= 1) ? " no-color-barcolors": "")}`}></div>
-                  <div className={`v3 ${((this.props.technologie.nivelExperiencia <= 2) ? " no-color-barcolors": "")}`}></div>
-                  <div className={`v4 ${((this.props.technologie.nivelExperiencia <= 3) ? " no-color-barcolors": "")}`}></div>
-                  <div className={`v5 ${((this.props.technologie.nivelExperiencia <= 4) ? " no-color-barcolors": "")}`}></div>
-                  <div className={`v6 ${((this.props.technologie.nivelExperiencia <= 5) ? " no-color-barcolors": "")}`}></div>
-                  <div className={`v7 ${((this.props.technologie.nivelExperiencia <= 6) ? " no-color-barcolors": "")}`}></div>
-                  <div className={`v8 ${((this.props.technologie.nivelExperiencia <= 7) ? " no-color-barcolors": "")}`}></div>
-                  <div className={`v9 ${((this.props.technologie.nivelExperiencia <= 8) ? " no-color-barcolors": "")}`}></div>
-                  <div className={`v10 ${((this.props.technologie.nivelExperiencia <= 9) ? " no-color-barcolors": "")}`}></div>
-              </div>
+                <div className="bar-colors background-transparent">
+                    <div className={`v ${((this.props.technologie.nivelExperiencia === 0) ? " no-color-barcolors": "")}`}></div>
+                    <div className={`v2 ${((this.props.technologie.nivelExperiencia <= 1) ? " no-color-barcolors": "")}`}></div>
+                    <div className={`v3 ${((this.props.technologie.nivelExperiencia <= 2) ? " no-color-barcolors": "")}`}></div>
+                    <div className={`v4 ${((this.props.technologie.nivelExperiencia <= 3) ? " no-color-barcolors": "")}`}></div>
+                    <div className={`v5 ${((this.props.technologie.nivelExperiencia <= 4) ? " no-color-barcolors": "")}`}></div>
+                    <div className={`v6 ${((this.props.technologie.nivelExperiencia <= 5) ? " no-color-barcolors": "")}`}></div>
+                    <div className={`v7 ${((this.props.technologie.nivelExperiencia <= 6) ? " no-color-barcolors": "")}`}></div>
+                    <div className={`v8 ${((this.props.technologie.nivelExperiencia <= 7) ? " no-color-barcolors": "")}`}></div>
+                    <div className={`v9 ${((this.props.technologie.nivelExperiencia <= 8) ? " no-color-barcolors": "")}`}></div>
+                    <div className={`v10 ${((this.props.technologie.nivelExperiencia <= 9) ? " no-color-barcolors": "")}`}></div>
+                </div>
               </ListGroup.Item>
             
             </ListGroup>
@@ -109,6 +129,20 @@ class TecnologiesCards extends React.Component{
                   <ListGroup className="list-group-flush mb-3">
                   
                     {enlacesTechnologie}
+                  
+                  </ListGroup>
+                </>)
+            }
+
+            {
+                librariesTechnologieCorporation && (librariesTechnologieCorporation.length > 0) &&
+                (<> 
+                  <Card.Text>
+                      Libraries.
+                  </Card.Text>    
+                  <ListGroup className="list-group-flush mb-3">
+                  
+                    {librariesTechnologieCorporation}
                   
                   </ListGroup>
                 </>)

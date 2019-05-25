@@ -33,7 +33,18 @@ const ApiOutsideExperience = [
           url: "https://github.com/Cesarezz/react-cv"
         }      
       ],
-      libraries: []
+      libraries: {
+        "outside": [
+          {
+            name: "react-router",
+            url: "https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom"
+          },
+          {
+            name: "react-bootstrap",
+            url: "https://react-bootstrap.github.io/"
+          }
+        ]
+      }
     },  
     { 
       id: 3, 
