@@ -19,11 +19,11 @@ class Others extends React.Component{
     //Accedemos por enrutamiento
     if(this.props.indice === undefined){
 
-      name = ApiKnowLedgeTypes[2].name;
+      name = ApiKnowLedgeTypes[3].name;
 
-      description = ApiKnowLedgeTypes[2].description;
+      description = ApiKnowLedgeTypes[3].description;
 
-      listIcons = ApiKnowLedgeTypes[2].icons.map( (icon, index) => 
+      listIcons = ApiKnowLedgeTypes[3].icons.map( (icon, index) => 
       
         <span className="mr-2" key={index} style={{verticalAlign: 'sub'}}> <i className={`icono-font fas ${icon}`}></i> </span>  
           

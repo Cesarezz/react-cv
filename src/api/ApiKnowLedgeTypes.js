@@ -28,7 +28,7 @@ const ApiKnowLedgeTypes = [
       description: "Cursos Extraprofesionales",
       url: "/others", 
       constName: "Others",
-      icons: ["fa-user-friends", 'fa-book-open'/*, 'fa-seedling', 'fa-frog', 'mortar-pestle'*/]
+      icons: ["fa-user-friends", 'fa-book-open', 'fa-coffee']
     }
 ];
 
