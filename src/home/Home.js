@@ -58,7 +58,10 @@ class Home extends React.Component{
                                       indice={knowLedgeTypeElem.id}
                                       knowLedgeType={knowLedgeTypeElem} 
                                       languages={ApiLanguages} ></Languages>
-        :<Others></Others>))));
+        :<Others key={knowLedgeTypeElem.id}
+                 indice={knowLedgeTypeElem.id}
+                 knowLedgeType={knowLedgeTypeElem} 
+                 others={ApiOthers}></Others>))));
       }   
     );
 

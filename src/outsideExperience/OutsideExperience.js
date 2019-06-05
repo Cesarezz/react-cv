@@ -16,8 +16,6 @@ class OutsideExperience extends React.Component{
 
   render(){
 
-    
-
     let outsideExperienceCards = [];
 
     let headerStatic, name, description, listIcons = null;
