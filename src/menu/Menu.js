@@ -93,7 +93,7 @@ class Menu extends React.Component{
 
       checksFormList = this.props.knowLedgeTypes.map((knowLedgeType) => 
       <Form.Check 
-        className="no-selectable"
+        className="no-selectable form-element"
         key={knowLedgeType.id}
         custom
         inline
