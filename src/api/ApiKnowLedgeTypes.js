@@ -12,7 +12,7 @@ const ApiKnowLedgeTypes = [
       description: "Estudios universitarios, MOOCs y proyectos personales",
       url: "/outside-experience",
       constName: "outsideExperience",
-      icons: ['fa-graduation-cap', 'fa-coffee', 'fa-home', 'fa-book-open']
+      icons: ['fa-graduation-cap', 'fa-coffee', 'fa-home']
     },
     { 
       id: 3, 

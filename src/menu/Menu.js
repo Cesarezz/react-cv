@@ -121,21 +121,31 @@ class Menu extends React.Component{
             </Row>            
           </Navbar.Brand>
           <Navbar.Brand href={ (this.props.location) ? `${locationURL}/img/CesarSanJoseViedma.jpg`: "./img/CesarSanJoseViedma.jpg"} 
-                        className="p-0">
+                        className="p-0 m-0">
               <Image src={(this.props.imageHref) ? this.props.imageHref :"img/CesarSanJoseViedma.jpg"} roundedCircle className="image-cv"/>
           </Navbar.Brand>      
-        </Navbar>
+        </Navbar>        
         { (this.props.knowLedgeTypes !== undefined) ? 
           <Navbar variant="dark" className="justify-content-between pb-1 pt-2">
             <span></span>
             <Form inline className="text-white">
               {checksFormList}
-              <span className="mr-2"><i className="cursor-pointer fas fa-download"></i> </span>
+              
             </Form>
           </Navbar> : ""}
-        
       </div>
     );
+
+    /* SI QUEREMOS PONER EL BOTON DE DESCARGA PONERLO JUSTO AQUI ARRIBA ANTES DE </FORM>
+    <span className="mr-2"><i className="cursor-pointer fas fa-download"></i> </span>
+     { (this.props.knowLedgeTypes !== undefined) ? 
+          <Navbar variant="dark" className="justify-content-between pb-1 pt-2">
+            <span></span>
+            <Form inline className="text-white">
+              {checksFormList}
+              
+            </Form>
+          </Navbar> : ""} */
 
   }
 }
