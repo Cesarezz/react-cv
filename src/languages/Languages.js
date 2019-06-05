@@ -10,6 +10,10 @@ import Col from 'react-bootstrap/Col';
 
 class Languages extends React.Component{
 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
 
     let languagesExperienceCards = [];
@@ -78,15 +82,20 @@ class Languages extends React.Component{
 
     if(this.props.indice === undefined){
 
+      let minHeightPx = `${window.innerHeight}px`;
+
       headerStatic = 
-      <Container fluid="true" className="h-100">
-        <Row>
-          <Menu/>
-        </Row>
-        <Row className="bg">
-          {containerComponentLanguages}
-        </Row>
-      </Container>;
+      <div className="App bg"
+           style={{minHeight: minHeightPx }}>
+        <Container fluid="true" className="h-100">
+          <Row>
+            <Menu/>
+          </Row>
+          <Row className="bg">
+            {containerComponentLanguages}
+          </Row>
+        </Container>
+      </div>;
 
     }
 

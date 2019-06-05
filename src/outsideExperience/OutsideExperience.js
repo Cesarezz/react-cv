@@ -89,15 +89,20 @@ class OutsideExperience extends React.Component{
 
     if(this.props.indice === undefined){
 
+      let minHeightPx = `${window.innerHeight}px`;
+
       headerStatic = 
-      <Container fluid="true" className="h-100">
-        <Row>
-          <Menu />
-        </Row>
-        <Row className="bg">
-          {containerComponentOutsideExperience}
-        </Row>
-      </Container>;
+      <div className="App bg"
+           style={{minHeight: minHeightPx }}>
+        <Container fluid="true" className="h-100">
+          <Row>
+            <Menu />
+          </Row>
+          <Row className="bg">
+            {containerComponentOutsideExperience}
+          </Row>
+        </Container>
+      </div>;
 
     }
 

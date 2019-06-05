@@ -101,15 +101,20 @@ class CorporationTechnologies extends React.Component{
 
     if(this.props.indice === undefined){
 
+      let minHeightPx = `${window.innerHeight}px`;
+
       headerStatic = 
-      <Container fluid="true" className="h-100">
-        <Row>
-          <Menu imageHref="./../../../img/CesarSanJoseViedma.jpg" location={location}/>
-        </Row>
-        <Row className="bg">
-          {containerComponentProfessionalExperience}
-        </Row>
-      </Container>;
+      <div className="App bg"
+           style={{minHeight: minHeightPx }}>
+        <Container fluid="true" className="h-100">
+          <Row>
+            <Menu imageHref="./../../../img/CesarSanJoseViedma.jpg" location={location}/>
+          </Row>
+          <Row className="bg">
+            {containerComponentProfessionalExperience}
+          </Row>
+        </Container>
+      </div>;
     }
 
     return(

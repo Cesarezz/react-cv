@@ -196,7 +196,11 @@ class ProfessionalExperience extends React.Component{
 
     if(this.props.indice === undefined){
 
+      let minHeightPx = `${window.innerHeight}px`;
+
       headerStatic = 
+      <div className="App bg"
+           style={{minHeight: minHeightPx }}>
         <Container fluid="true" className="h-100">
           <Row>
             <Menu imageHref="./../../img/CesarSanJoseViedma.jpg" location={location}/>
@@ -204,7 +208,8 @@ class ProfessionalExperience extends React.Component{
           <Row className="bg">
             {containerComponentProfessionalExperience}
           </Row>
-        </Container>;
+        </Container>
+      </div>;
 
     }
 

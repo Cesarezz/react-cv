@@ -10,6 +10,10 @@ import Col from 'react-bootstrap/Col';
 
 class Others extends React.Component{
 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
 
     let otherExperienceCards = [];
@@ -81,15 +85,20 @@ class Others extends React.Component{
 
     if(this.props.indice === undefined){
 
+      let minHeightPx = `${window.innerHeight}px`;
+
       headerStatic = 
-      <Container fluid="true" className="h-100">
-        <Row>
-          <Menu/>
-        </Row>
-        <Row className="bg">
-          {containerComponentOthers}
-        </Row>
-      </Container>;
+      <div className="App bg"
+           style={{minHeight: minHeightPx }}>
+        <Container fluid="true" className="h-100">
+          <Row>
+            <Menu/>
+          </Row>
+          <Row className="bg">
+            {containerComponentOthers}
+          </Row>
+        </Container>
+      </div>;
 
     }
 
