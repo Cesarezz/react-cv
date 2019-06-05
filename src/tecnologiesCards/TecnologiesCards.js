@@ -104,13 +104,13 @@ class TecnologiesCards extends React.Component{
             <ListGroup className="list-group-flush mb-3">
             
               <ListGroup.Item className="background-transparent">
-                <div className="bar-colors background-transparent">
+                <div className={`bar-colors background-transparent ${((this.props.technologie.nivelExperiencia <= 1)? "color1":((this.props.technologie.nivelExperiencia <= 2)? "color2" : ( (this.props.technologie.nivelExperiencia <= 3) ? "color3": ( (this.props.technologie.nivelExperiencia <= 4) ? "color4": ( (this.props.technologie.nivelExperiencia <= 5) ? "color5": ( (this.props.technologie.nivelExperiencia <= 6) ? "color6": ( (this.props.technologie.nivelExperiencia <= 7) ? "color7": ( (this.props.technologie.nivelExperiencia <= 8) ? "color8": ( (this.props.technologie.nivelExperiencia <= 9) ? "color9": "color10" ) )) ) )) )) )}`}>
                     <div className={`v ${((this.props.technologie.nivelExperiencia === 0) ? " no-color-barcolors": "")}`}></div>
                     <div className={`v2 ${((this.props.technologie.nivelExperiencia <= 1) ? " no-color-barcolors": "")}`}></div>
                     <div className={`v3 ${((this.props.technologie.nivelExperiencia <= 2) ? " no-color-barcolors": "")}`}></div>
                     <div className={`v4 ${((this.props.technologie.nivelExperiencia <= 3) ? " no-color-barcolors": "")}`}></div>
                     <div className={`v5 ${((this.props.technologie.nivelExperiencia <= 4) ? " no-color-barcolors": "")}`}></div>
-                    <div className={`v6 ${((this.props.technologie.nivelExperiencia <= 5) ? " no-color-barcolors": "")}`}></div>
+                    <div className={`v6  ${((this.props.technologie.nivelExperiencia <= 5) ? " no-color-barcolors": "")}`}></div>
                     <div className={`v7 ${((this.props.technologie.nivelExperiencia <= 6) ? " no-color-barcolors": "")}`}></div>
                     <div className={`v8 ${((this.props.technologie.nivelExperiencia <= 7) ? " no-color-barcolors": "")}`}></div>
                     <div className={`v9 ${((this.props.technologie.nivelExperiencia <= 8) ? " no-color-barcolors": "")}`}></div>
