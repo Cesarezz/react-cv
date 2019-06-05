@@ -2,10 +2,11 @@ import React from 'react';
 import './Languages.scss';
 import ApiLanguages from './../api/ApiLanguages';
 import ApiKnowLedgeTypes from './../api/ApiKnowLedgeTypes';
-import LanguagesCards from './../languagesCards/LanguagesCards';
+import LanguagesCards from './languagesCards/LanguagesCards';
 import Container from 'react-bootstrap/Container';
 import Menu from './../menu/Menu';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Languages extends React.Component{
 
@@ -56,13 +57,24 @@ class Languages extends React.Component{
     }
 
     let containerComponentLanguages = 
-      <div className="Languages">
+    <Col xl={12} lg={12} md={12} sm={12} xs={12} className="Languages border-section-bottom mt-3 mb-3">
 
-        <Row className="mt-2 mb-2"> 
-          {languagesExperienceCards}
-        </Row>
+      <Row className="border-section background-semitransparent pt-1">
 
-      </div>;
+          <Col xl={5} lg={6} md={6} sm={6} xs={8}>
+            <span className="title-section" style={{verticalAlign: '-webkit-baseline-middle'}}>{name}</span>            
+          </Col>
+          <Col xl={7} lg={6} md={6} sm={6} xs={4} className="text-right">
+              {listIcons}
+          </Col>
+
+      </Row>
+
+      <Row className="mt-2 mb-2"> 
+        {languagesExperienceCards}
+      </Row>
+
+    </Col>;
 
     if(this.props.indice === undefined){
 

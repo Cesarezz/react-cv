@@ -17,7 +17,7 @@ const ApiKnowLedgeTypes = [
     { 
       id: 3, 
       name: "Idiomas", 
-      description: "Cursos y nivel",
+      description: "",
       url: "/languages", 
       constName: "Languages",
       icons: ["fa-language", "fa-globe-europe"]
