@@ -18,14 +18,12 @@ class Languages extends React.Component{
 
     let languagesExperienceCards = [];
 
-    let headerStatic, name, description, listIcons = null;
+    let headerStatic, name, listIcons = null;
 
     //Accedemos por enrutamiento
     if(this.props.indice === undefined){
 
       name = ApiKnowLedgeTypes[2].name;
-
-      description = ApiKnowLedgeTypes[2].description;
 
       listIcons = ApiKnowLedgeTypes[2].icons.map( (icon, index) => 
       
@@ -43,8 +41,6 @@ class Languages extends React.Component{
     else {
 
       name = this.props.knowLedgeType.name;
-
-      description = this.props.knowLedgeType.description;
 
       listIcons = this.props.knowLedgeType.icons.map( (icon, index) => 
       

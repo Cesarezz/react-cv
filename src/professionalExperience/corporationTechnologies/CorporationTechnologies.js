@@ -20,7 +20,7 @@ class CorporationTechnologies extends React.Component{
     let technologiesCards = [];
 
     let headerStatic, nombreEmpresa, nombreConsultora, logoEmpresa, tareasList, corporation, technologiesCorporation = null;
-    let { match, location, history } = this.props;
+    let { match, location } = this.props;
 
     //Si se cumple lo siguiente es que estamos accediendo por enrutamiento con un id de empresa / corporación
     if(this.props.indice === undefined){      
@@ -61,7 +61,7 @@ class CorporationTechnologies extends React.Component{
             className="hashtag-style-toolbar mr-2"> #{tarea}</span>
     );
 
-    technologiesCorporation.map((technologieCorp, indice) => {
+    technologiesCorporation.forEach((technologieCorp, indice) => {
           
       technologiesCards.push(<TecnologiesCards key={indice} technologie={technologieCorp} corporationId={corporation.id} ></TecnologiesCards>);
         
