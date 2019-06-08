@@ -34,6 +34,10 @@
             font-size: 17px;
         }
 
+        label[type='checkbox']{
+            font-size: 1rem;            
+        }
+
         .custom-control-label::before{
             height: 1rem;
         }

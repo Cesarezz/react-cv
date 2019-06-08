@@ -7,6 +7,8 @@ import Container from 'react-bootstrap/Container';
 import Menu from './../menu/Menu';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 class Languages extends React.Component{
 
@@ -27,7 +29,18 @@ class Languages extends React.Component{
 
       listIcons = ApiKnowLedgeTypes[2].icons.map( (icon, index) => 
       
-        <span className="mr-2" key={index} style={{verticalAlign: 'sub'}}> <i className={`icono-font fas ${icon}`}></i> </span>  
+        <OverlayTrigger
+        key={index}
+        placement="bottom"
+        overlay={
+          <Tooltip id={`tooltip-${index}`}>
+            {ApiKnowLedgeTypes[2].iconsText[index]}
+          </Tooltip>
+        }>
+
+          <span className="mr-2" key={index} style={{verticalAlign: 'sub'}}> <i className={`icono-font fas ${icon}`}></i> </span>  
+
+        </OverlayTrigger>
           
       );
 
@@ -43,8 +56,19 @@ class Languages extends React.Component{
       name = this.props.knowLedgeType.name;
 
       listIcons = this.props.knowLedgeType.icons.map( (icon, index) => 
+
+      <OverlayTrigger
+          key={index}
+          placement="bottom"
+          overlay={
+            <Tooltip id={`tooltip-${index}`}>
+              {this.props.knowLedgeType.iconsText[index]}
+            </Tooltip>
+          }>
       
         <span className="mr-2" key={index} style={{verticalAlign: 'sub'}}> <i className={`icono-font fas ${icon}`}></i> </span>  
+
+        </OverlayTrigger>
           
       );
 
