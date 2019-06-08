@@ -4,14 +4,27 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 class KnowLedgeType extends React.Component{
 
   render() {
 
     const listIcons = this.props.knowLedgeType.icons.map( (icon, index) => 
+
+    <OverlayTrigger
+      key={index}
+      placement="bottom"
+      overlay={
+        <Tooltip id={`tooltip-${index}`}>
+          {this.props.knowLedgeType.iconsText[index]}
+        </Tooltip>
+      }>
     
-      <span className="mr-2" style={{verticalAlign: 'sub'}} key={index}> <i className={`icono-font fas ${icon}`}></i> </span>  
+        <span className="mr-2" style={{verticalAlign: 'sub'}} key={index}> <i className={`icono-font fas ${icon}`}></i> </span>  
+
+      </OverlayTrigger>
         
     );
 
