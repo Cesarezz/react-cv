@@ -138,7 +138,7 @@ class TecnologiesCards extends React.Component{
                 librariesTechnologieCorporation && (librariesTechnologieCorporation.length > 0) &&
                 (<> 
                   <Card.Text>
-                      Libraries.
+                      Librerías
                   </Card.Text>    
                   <ListGroup className="list-group-flush mb-3">
                   
