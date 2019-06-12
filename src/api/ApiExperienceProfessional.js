@@ -330,6 +330,18 @@ const ApiExperienceProfessional = [
     experienciaProfesional: true,
     enlaces: [],
     libraries: null
+  },
+  {
+    id: 23, 
+    nombreTecnologia: "Jasmine",
+    logoTecnologia: "img/jasmine.svg",
+    nivelExperiencia: 5,
+    corporationsKey: [5,4],
+    experienciaUniversitaria: false,
+    experienciaTiempoLibre: false,
+    experienciaProfesional: true,
+    enlaces: [],
+    libraries: null
   }
 ];
   
